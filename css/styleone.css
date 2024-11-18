@@ -1,0 +1,430 @@
+/* Basic reset for margin and padding, ensuring full height/width usage */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set default font */
+    background-image: url('viewtewocover.jpg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color to white */
+}
+
+/* Header container styles */
+#header {
+    width: 230px;
+    height: 100%; /* Full height of the viewport */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    position: fixed; /* Fix the header in place */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header stays on top */
+}
+    video{
+        margin-left:300px;
+    }
+    /* Delivery Moto */
+    .deliverymoto {
+        float: right;
+        margin-right:-5px;
+        width: 100%;
+        font-family: cursive;
+        font-weight: lighter;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+    }
+    
+    .moto {
+        animation: scroll 5s alternate-reverse infinite, color-change 5s alternate infinite;
+    }
+    
+    /* Scrolling animation */
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    /* Color changing animation */
+    @keyframes color-change {
+        0% {
+            color: #ffffff; /* Start with white */
+        }
+        25% {
+            color: #ff6347; /* Tomato */
+        }
+        50% {
+            color: #ffcc00; /* Yellow */
+        }                                        
+        75% {
+            color:  #1e90ff; /* Lime Green */
+        }
+        100% {
+            color: #686b6d; /* Dodger Blue */
+        }
+    }
+                    /* product name (title) */
+                    .prdname{
+                        font-family:cursive;
+                        justify-content: center;
+                        text-align: center;
+                        color:white;
+                    }
+                            /* Kani search bar button ug cart for experimention  */
+                                    /* Container for the search bar, button, and cart icon */
+                    .fixed-header {
+                        margin-top: 100px;
+                        margin-left: 1000px;
+                        width: 100%; /* Full width of the screen */
+                        display: flex;
+                        justify-content: center; /* Center the content horizontally */
+                        align-items: center;
+                        padding: 10px;
+                        z-index: 1001; /* Ensure it stays on top of other elements */
+                    }
+
+                    /* Search form styles to keep input and button on the same line */
+                    .search-form {
+                        display: flex;
+                        align-items: center; /* Center vertically */
+                        margin-right: 20px; /* Space between search and cart */
+                    }
+
+                    /* Search bar styles */
+                    #search-bar {
+                        padding: 10px;
+                        width: 250px; /* Adjusted width to fit nicely */
+                        border: 1px solid #ccc;
+                        border-radius: 5px 0 0 5px; /* Rounded corners, left side only */
+                        background-color: #fff;
+                        color: #333;
+                        font-size: 16px;
+                        outline: none;
+                    }
+
+                    /* Search button styles */
+                    #search-btn {
+                        padding: 10px;
+                        background-color: #4e4b4a;
+                        color: #fff;
+                        border: none;
+                        border-radius: 0 5px 5px 0; /* Rounded corners, right side only */
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    #search-btn:hover {
+                        background-color: #333;
+                    }
+
+                    /* Cart icon styles */
+                    .cart-icon a {
+                        color: #fff;
+                        font-size: 24px;
+                        text-decoration: none;
+                    }
+
+                    .cart-icon a:hover {
+                        color: #706e6e; /* Orange hover effect */
+                    }
+
+                    /* Ensuring search button icon size */
+                    #search-btn i {
+                        font-size: 16px;
+                    }
+
+                #search-btn:hover {
+                    background-color: #333; /* Darker color on hover */
+                }
+                    /* dire kutob */
+/* Title section for logo and site name */
+.title {
+    text-align: center;
+    /* border: 1px solid yellow; */
+    width: 250px;
+    height: auto;
+    margin:0 0 0px 0 ;
+}
+
+.title .logo img{
+    float: left;
+    margin-left:70px ;
+    width: 50px;
+    height: 80px; /* Set fixed size for logo image */
+}
+
+.name {
+    margin-right: 40px;
+    color: #f5f5f5; /* Light gray color for the name */
+}
+
+/* Navbar styles for the navigation links */
+.navbar {
+    position: sticky;
+    margin-top: 35px;
+    text-align: center; /* Center-align the menu items */
+}
+
+.menu {
+    display: block;
+    font-size: 20px; /* Larger font for menu items */
+    padding: 15px 0; /* Padding around each menu item */
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s ease-in,ease; /* Smooth transition for hover effects */
+}
+/* Hover effect for the menu items */
+.menu:hover {
+    color: #5a5a5a; /* Change text color on hover */
+    font-weight: bold;
+    border-bottom: 3px solid #ffffff; /* Underline effect on hover */
+}
+        /* MY NAME  */
+    #names{
+        /* margin-right: -40px; */
+        font-weight: bolder;
+        color:#ffc0cb;
+        float: right;
+        position:sticky; 
+        /* position: fixed;  */
+        margin: -650px 50px 0 0;
+        text-align:center
+    }
+/* Styling for the login form container */
+    /* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* Login Form */
+    
+#signup {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh; /* Reduced minimum height */
+    margin-left: auto;
+    margin-right: auto;
+}
+#logins {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh; /* Reduced minimum height */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formcontainer {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 10px; /* Reduced padding */
+    width: 240px; /* Width remains the same */
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.innerformcontainer {
+    padding: 5px; /* Further reduced padding */
+    text-align: center;
+}
+
+.forminputs {
+    padding: 5px; /* Reduced padding */
+    margin-top: 5px; /* Adjusted margin */
+}
+
+label, input[type="text"], input[type="password"], input[name="captcha"], input[type="submit"] {
+    margin: 3px 0; /* Reduced margin */
+}
+
+input[type="text"], input[type="password"], input[name="captcha"], input[type="submit"] {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #46392f;
+    color: #ffffff;
+    font-size: 14px; /* Font size remains the same */
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[name="captcha"]:focus {
+    background-color: #050505;
+}
+
+input[type="submit"] {
+    background-color: #202020;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #696767;
+}
+
+#imgcap {
+    width: 100px; /* Adjusted size */
+    height: 30px; /* Adjusted size */
+    cursor: pointer;
+    margin-top: 5px; /* Reduced top margin */
+}
+
+.terms {
+    font-size: 10px; /* Smaller font size */
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.terms:hover {
+    color: #a39d9c;
+    text-decoration: underline;
+}
+
+/* Error message */
+.error-message {
+    font-size: 10px; /* Smaller font size */
+    color: yellow;
+    margin-top: 5px; /* Reduced margin */
+}
+
+/* Other Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Main content area styles */
+#content {
+    /* border:1px solid yellow; */
+    margin-left: 250px; /* Offset content to the right of the fixed header */
+    padding: 50px 20px; /* Padding around content */
+}
+
+/* Product container layout - flexbox for responsiveness */
+#product-container {
+    margin-left:110px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Spacing between product items */
+}
+
+/* Individual product item styles */
+.product-item {
+    background: #fff; /* White background for product item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow */
+    width: calc(33% - 40px); /* 3 items per row with spacing */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+/* Hover effect to lift product card */
+.product-item:hover {
+    transform: translateY(-5px); /* Moves card slightly up on hover */
+}
+
+/* Product image styling */
+.product-item img {
+    width: 100%; /* Full width for image */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensure image covers the space without distortion */
+}
+
+/* Details container for product info */
+.product-details {
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f8f8; /* Light gray background for text */
+}
+
+/* Product name styling */
+.product-name {
+    color:rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Price and availability info */
+.product-info {
+    color:rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Button for shopping */
+.shop-button {
+    background-color: #4e4b4a;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Rounded button */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the shop button */
+.shop-button:hover {
+    background-color: #333; /* Darker color on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #222; /* Dark footer background */
+    color: #f5f5f5; /* Light gray text */
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Contact info and social icons are aligned inline */
+.footer .contact-info {
+    display: inline-block;
+    /* border :1px solid yellow; */
+    margin-right: -150px;
+}
+
+/* Spacing for the contact information */
+.footer .contact-info p {
+    margin: 10px 0;
+}
+
+/* Social icon styling */
+.social-icons{
+    /* border:1px solid green; */
+    width: 300px;
+    margin-left: 570px;
+}
+.footer .social-icons a {
+    color: #f5f5f5; /* Default icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Social icon hover effect */
+.footer .social-icons a:hover {
+    color: #414141; /* Change color to orange on hover */
+}
+    
